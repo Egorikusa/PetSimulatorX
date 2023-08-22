@@ -392,8 +392,7 @@ if GetOranges() <= Settings["Fruit"]["Min Fruit"] or readfile("fruitfarmT.txt") 
 
             for i,v in pairs(AllCoins) do
                 attack_coin(v, equipped)
-                wait(0.05)
-                wait_until_broken(i)
+                wait(0.1)
             end
             if GetOranges() >= Settings["Fruit"]["Max Fruit"] then
                 writefile("fruitfarmT.txt", "false")
@@ -1481,8 +1480,7 @@ local equipped = {}
 CoinsLeft = #AllNeededCoins
 for i,v in pairs(AllNeededCoins) do
 	attack_coin(v, equipped)
-	wait(0.05)
-	wait_until_broken(v)
+	wait(0.1)
     CoinsLeft = CoinsLeft - 1
 end
 wait(1)
