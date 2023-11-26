@@ -113,7 +113,7 @@ Tab:AddButton({
 	Callback = function()
 Rank = PartnerRank
 Message = "SIGNING HUGES TRADE ME"
-SpamTime = 10
+SpamTime = 30
 Username = game.Players.LocalPlayer.DisplayName
 PlayerMessage = ""
   	end    
